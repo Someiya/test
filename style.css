@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    background:beige;
+    color:black;
+
+}
+
+/*Navbar*/
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: rgb(209, 172, 115);
+    position:sticky;
+    top:0;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    text-decoration: none;
+    color:black;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* hero*/
+
+.hero{
+    height:60vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:10px;
+    animation:fadeIn 2s;
+}
+
+.hero p{
+    color:#94a3b8;
+}
+
+/* Section*/
+
+section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+/*Project card*/
+
+.project-container{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:rgb(238, 215, 187);
+    padding:20px;
+    
+    width:250px;
+    border-radius:10px;
+    transition: 0.3s;
+    
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:black;
+}
+.card:hover{
+    transform:translate(-10px);
+    background: rgb(235, 220, 172);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/*Animation*/
+
+@keyframes fadeIn{
+from{
+    opacity:0;
+    transform: translate(20px);
+}
+
+to{
+    opacity:1;
+    transform:translate(0);
+}
+
+}
