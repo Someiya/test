@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin:0;
     padding:0;
@@ -6,8 +10,8 @@
 }
 
 body{
-    background:beige;
-    color:black;
+    background:#F2EFE9;
+    color:#36383A;
 
 }
 
@@ -18,25 +22,29 @@ nav{
     justify-content:space-between;
     align-items: center;
     padding: 20px 10%;
-    background: rgb(209, 172, 115);
+    background: #57595B;
     position:sticky;
     top:0;
+    color:white;
+    z-index:1000; 
 }
+
 
 nav ul{
     display:flex;
     list-style:none;
     gap:20px;
+    
 }
 
 nav a{
     text-decoration: none;
-    color:black;
+    color:white;
     transition:0.3s;
 }
 
 nav a:hover{
-    color:#38bdf8;
+    color:#E4DCCB;
 }
 
 /* hero*/
@@ -57,7 +65,7 @@ nav a:hover{
 }
 
 .hero p{
-    color:#94a3b8;
+    color:#57595B;
 }
 
 /* Section*/
@@ -81,9 +89,8 @@ h2{
 }
 
 .card{
-    background:rgb(238, 215, 187);
+    background:#AAB1A1;
     padding:20px;
-    
     width:250px;
     border-radius:10px;
     transition: 0.3s;
@@ -97,10 +104,16 @@ h2{
 .card p{
     color:black;
 }
+
+.card:hover p{
+    color:#F2EFE9;
+}
+
 .card:hover{
     transform:translate(-10px);
-    background: rgb(235, 220, 172);
+    background: #57595B;
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    color:#F2EFE9;
 }
 
 /*Animation*/
