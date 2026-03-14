@@ -117,3 +117,27 @@ to{
 }
 
 }
+
+.about-container{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:40px;
+    margin-top: 30px;
+}
+
+.about-img{
+width:150px;
+height:200px;
+object-fit:fill;
+border-radius:20%;
+transition:1s;
+opacity:0;              
+transform:translateY(50px);
+}
+
+
+.about-img.show{
+    opacity: 1;
+    transform: translateY(0);
+}
